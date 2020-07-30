@@ -282,11 +282,34 @@ Database
 
 
 
+Joins
+=========================
+	- Joins allows you to to retrieve the data from multiple tables in a single select statement
+	- To join or to retrieve from 2 tables, it needs to have a related column between them
+	- there are many types of joins 
+		1. Inner Join
+		2. Left Join
+		3. Right Join
+
+	1. Inner Join
+	--------------------------
+		- Retreive the data only when there is matching values in both tables
+
+		syntax
+		--------------
+					{Which Columns you want 
+								to Display}
+			Select T1.col_name, T2.col_name from Child_Table_name INNER JOIN Parent_Table_Name ON Child_Column = Parent_Column;
 
 
 
+	2. Left Join
+	------------------------
+		- Retrieve all the data from Table1 and matching rows from Table2
 
-
+	2. Right Join
+	------------------------
+		- Retrieve all the data from Table2 and matching rows from Table1
 
 
 
