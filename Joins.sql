@@ -46,8 +46,7 @@ Select o.id, c.first_name, p.id AS 'Product ID', p.name AS 'Product Name' from
 	orders o 
     INNER JOIN product p ON o.product_id = p.id
     INNER JOIN customer c ON o.customer_id = c.id;
-    
-    
+
     
 Select o.id, o.product_id, p.name, o.customer_id, c.first_name, o.order_time
 	from orders o

@@ -51,3 +51,11 @@ desc orders;
 drop table orders;
 select * from orders;
 
+-- Junction Table
+Create table order_detail (
+	product_id INT,
+    order_id INT,
+    foreign key (product_id) references product(id),
+    foreign key (order_id) references orders(id)
+);
+

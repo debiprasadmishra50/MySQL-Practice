@@ -313,16 +313,87 @@ Joins
 
 
 
+Database Design
+=======================================
+	- Normalization
+	- Relationship
+	- Constraints
+
+	Normalization
+	---------------------
+		- Process of efficiently organising records in the database
+
+		Why
+		----------	
+			- It is used to remove the redundant data, Not to store duplicate rows in a table
+			- To only store related data in a table, not storing the same data in different table
+
+		Benifits
+		-----------------
+			- Reduces Storage space
+			- Improving Query performance
+			- Reduce insert, update and deletion process or execution
+
+		Levels
+		-------------
+			1. 1st Normal form
+			2. 2nd Normal form
+			3. 3rd Normal form
+			4. Boyce and Codd Normal Form (BCNF)
+
+		1. 1st Normal form
+		-------------------------
+			- It has
+				- No Repeated Rows of data
+				- Columns only contain a single value
+				- Table has to have a primary key
 
 
+		2. 2nd Normal Firm
+		-------------------------
+			- 1NF + Every Column that is not a primary key of the table is dependent on whole of primary key.
+
+		3. 3rd Normal form
+		--------------------------
+			- 2NF + Every Column that is not a primary key of the table is Only Dependent on whole of primary key.
 
 
+	Relationship
+	--------------------
+		- Tables are related to each other by Foreign Key and Primary Key
+		- There are 3 types of relation
+			- One TO One Relationship
+			- One TO Many Relationship
+			- Many TO Many Relationship
+
+		One TO One Relationship
+		-----------------------------
+			- Key to one table appears no more than once, as key in another table & Vice Versa
+				- Product TO Product_Details
+
+		One TO Many Relationship
+		-----------------------------------
+			- A Primary Key column of one table can be in multiple rows of a foreign key column of another table
+
+		Many TO Many Relationship
+		--------------------------------
+			- In here 2 tables can have as many instances of each other
+				Order_Detail table connecting Product and Orders
+
+				Order_Detail is Junction Table
+
+	Constraints
+	------------------
+		- Constraints are placed on columns within Tables and they used to restrict what values can be entered into these columns
+		Not Null : A column name can not ccontain a Null Value
+		Unique Key : A column can not contain duplicate value
+		Primary Key : uniquely identifies each row
+		Foreign Key : Column which is related to Primary Key in Parent Table
+		Check : Controls the values that can be inserted into a column( Movie ratings between 0 to 10)
+		Default : If no values were entered into a column then the default value will be taken as a replacement
 
 
-
-
-
-
+	
 
 
 

@@ -6,6 +6,8 @@ Select * from customer; -- * means return all the columns and all the datas pres
 Select * from product;
 Select * from orders;
 
+select * from product where id = 1;
+
 Select first_name from customer;
 
 Select first_name, last_name, phone_no from customer;
